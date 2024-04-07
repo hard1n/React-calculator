@@ -33,34 +33,34 @@ function App() {
           </div>
           <div className="btn-container">
             <div className="row">
-              <Button className="clean">C</Button>
-              <Button className="function">()</Button>
-              <Button className="function">%</Button>
-              <Button className="function">÷</Button>
+              <Button>C</Button>
+              <Button>()</Button>
+              <Button>%</Button>
+              <Button>÷</Button>
             </div>
             <div className="row">
               <Button onClick={drawNumber()}>7</Button>
               <Button>8</Button>
               <Button>9</Button>
-              <Button className="function">×</Button>
+              <Button>×</Button>
             </div>
             <div className="row">
               <Button>4</Button>
               <Button>5</Button>
               <Button>6</Button>
-              <Button className="function">-</Button>
+              <Button>-</Button>
             </div>
             <div className="row">
               <Button>1</Button>
               <Button>2</Button>
               <Button>3</Button>
-              <Button className="function">+</Button>
+              <Button>+</Button>
             </div>
             <div className="row">
               <Button>+/-</Button>
               <Button>0</Button>
               <Button>.</Button>
-              <Button className="eq-funct">=</Button>
+              <Button>=</Button>
             </div>
           </div>
         </div>
