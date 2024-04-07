@@ -1,6 +1,7 @@
 // import { useState } from "react";
 import "./App.css";
 import Button from "./components/button.jsx";
+import Screen from "./components/screen.jsx";
 
 function drawNumber() {
   // const $screen = document.getElementById("main-screen");
@@ -27,10 +28,7 @@ function App() {
       <h1>Vite + React Calculator</h1>
       <div className="App">
         <div className="container">
-          <div className="screen">
-            <input type="number" dir="rtl" name="" id="main-screen" />
-            <input type="number" name="" id="" disabled />
-          </div>
+          <Screen />
           <div className="btn-container">
             <div className="row">
               <Button>C</Button>

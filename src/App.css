@@ -18,21 +18,6 @@
   width: 230px;
 }
 
-.screen {
-  border-bottom: 1px solid #1a1a1a;
-  margin: 0 auto;
-  width: 12rem;
-}
-
-.screen input {
-  background-color: #000;
-  border: none;
-  margin-bottom: 4px;
-  font-size: 1rem;
-  height: 3rem;
-  width: 100%;
-}
-
 .row {
   display: flex;
   justify-content: center;
@@ -40,29 +25,6 @@
 
 .btn-container {
   padding: 1rem 0;
-}
-
-.btn {
-  border-radius: 50%;
-  text-align: center;
-  font-size: 1.3rem;
-  margin: 2px;
-  padding: 0;
-  height: 3rem;
-  width: 3rem;
-}
-
-.clean {
-  color: orangered;
-}
-
-.function {
-  color: rgb(0, 255, 0);
-}
-
-.equal {
-  background-color: green;
-  color: #fff;
 }
 
 .read-the-docs {

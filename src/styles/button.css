@@ -1,0 +1,22 @@
+.btn {
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 2px;
+  padding: 0;
+  height: 3rem;
+  width: 3rem;
+}
+
+.clean {
+  color: orangered;
+}
+
+.function {
+  color: rgb(0, 255, 0);
+}
+
+.equal {
+  background-color: green;
+  color: #fff;
+}

@@ -1,0 +1,25 @@
+.screen {
+  border-bottom: 1px solid #1a1a1a;
+  margin: 0 auto;
+  width: 12rem;
+}
+
+.screen div {
+  background-color: #000;
+  border: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 4px;
+  width: 100%;
+}
+
+.main-screen {
+  font-size: 1rem;
+  height: 3rem;
+}
+
+.temp-screen {
+  font-size: 1rem;
+  height: 1.5rem;
+}

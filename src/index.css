@@ -45,10 +45,11 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.3s;
 }
 button:hover {
-  border-color: #646cff;
+  /* border-color: #646cff; */
+  box-shadow: 0 1px 4px white;
 }
 
 button:active {
