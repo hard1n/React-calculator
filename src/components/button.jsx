@@ -10,7 +10,10 @@ function Button(props) {
 
   return (
     <>
-      <button className={`btn ${buttonType(props.children)}`}>
+      <button
+        className={`btn ${buttonType(props.children)}`}
+        onClick={() => props.handleClick(props.children)}
+      >
         {props.children}
       </button>
     </>

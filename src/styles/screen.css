@@ -15,11 +15,16 @@
 }
 
 .main-screen {
-  font-size: 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
   height: 3rem;
 }
 
 .temp-screen {
   font-size: 1rem;
   height: 1.5rem;
+}
+
+.operator {
+  color: rgb(0, 255, 0);
 }
