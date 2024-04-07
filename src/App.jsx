@@ -1,24 +1,24 @@
 // import { useState } from "react";
 import "./App.css";
-import "./styles/testimonial.css";
-
-const Button = (props) => {
-  // console.log(props);
-  return (
-    <>
-      <button className={`btn ${props.className}`}>{props.children}</button>
-    </>
-  );
-};
+import Button from "./components/button.jsx";
 
 function drawNumber() {
-  const $screen = document.getElementById("main");
-  document.addEventListener("click", (e) => {
-    // console.log(e.target);
-    console.log(e.target.textContent);
-    console.log($screen);
-    // $screen.value = e.target.textContent;
+  // const $screen = document.getElementById("main-screen");
+  const $btns = document.querySelectorAll(".btn");
+  $btns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      // console.log(e.target);
+      console.log(e.target.textContent);
+      console.log($btns);
+      // $screen.value = e.target.textContent;
+    });
   });
+  // document.addEventListener("click", (e) => {
+  //   // console.log(e.target);
+  //   console.log(e.target.textContent);
+  //   console.log($btns);
+  //   // $screen.value = e.target.textContent;
+  // });
 }
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
       <div className="App">
         <div className="container">
           <div className="screen">
-            <input type="number" dir="rtl" name="" id="main" />
+            <input type="number" dir="rtl" name="" id="main-screen" />
             <input type="number" name="" id="" disabled />
           </div>
           <div className="btn-container">
