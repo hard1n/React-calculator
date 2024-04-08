@@ -2,12 +2,31 @@ import "./App.css";
 import Button from "./components/button.jsx";
 import Screen from "./components/screen.jsx";
 import { useState } from "react";
+import { evaluate } from "mathjs";
 
 function App() {
   const [input, setInput] = useState("");
 
   const showInput = (value) => {
     setInput(input + value);
+  };
+
+  const calcResult = () => {
+    /* Changing symbols to valid MathJS ones */
+    let exp = input;
+    if (input.includes("÷")) {
+      exp = input.replace("÷", "/");
+    }
+    if (input.includes("×")) {
+      exp = input.replace("×", "*");
+    }
+
+    /* Adding close parenthesis by default */
+    if (input.includes("(") && !input.includes(")")) {
+      exp = input + ")";
+    }
+
+    setInput(evaluate(exp));
   };
 
   return (
@@ -45,7 +64,7 @@ function App() {
               <Button>+/-</Button>
               <Button handleClick={showInput}>0</Button>
               <Button>.</Button>
-              <Button>=</Button>
+              <Button handleClick={calcResult}>=</Button>
             </div>
           </div>
         </div>
