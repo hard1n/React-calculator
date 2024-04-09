@@ -1,6 +1,7 @@
 # Calculator
 
-**Description:** Samsung phone calculator clone made to practice with react components and layouts.
+**Description:**
+Samsung phone calculator clone made to practice with react components and layouts.
 
 **Features:**
 
@@ -9,5 +10,3 @@
 - MathJS library to calculate.
 
 **Technologies Used:** HTML, CSS, JavaScript + React
-
-[View Repository](link)
